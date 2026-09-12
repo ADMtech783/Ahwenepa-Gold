@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahwenepa Gold Beauty Palace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">Ahwenepa <span>Gold</span></div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#booking" class="nav-book">Book Now</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Beauty Palace — Accra</div>
+      <h1>Crafted beauty, by hand.</h1>
+      <p>Makeup artistry, wig making, bridal hairstyling and more — in our Accra studio or at your doorstep.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">Book an appointment</a>
+        <a href="#services" class="btn-secondary">See services</a>
+      </div>
+    </div>
+    <div class="hero-visual"></div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="services-head">
+      <h2>What we do</h2>
+      <p>Every service performed by trained hands — in-studio or as a home visit within Accra.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card service-card--wide">
+        <div class="service-num">01</div>
+        <h3>Bridal Hairstyling</h3>
+        <p>Full styling for your big day, with trial sessions available.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <h3>Wig Making</h3>
+        <p>Custom-built, made to fit.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <h3>Makeup Artistry</h3>
+        <p>Everyday glam to full bridal.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <h3>Cornrow &amp; Braiding</h3>
+        <p>Classic and protective styles.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <h3>Hair Fixing &amp; Washing</h3>
+        <p>Master-level care and repair.</p>
+      </div>
+      <div class="service-card service-card--wide">
+        <div class="service-num">06</div>
+        <h3>Manicure, Pedicure &amp; Facial Massaging</h3>
+        <p>Complete finishing touches, in-studio or at home.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="services-head">
+      <h2>Our work</h2>
+      <p>A look at recent styling, wigs, and bridal looks from the studio.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-tile gallery-tile--tall"><span>Bridal</span></div>
+      <div class="gallery-tile"><span>Wigs</span></div>
+      <div class="gallery-tile"><span>Braids</span></div>
+      <div class="gallery-tile gallery-tile--wide"><span>Makeup</span></div>
+      <div class="gallery-tile"><span>Facial</span></div>
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <div class="services-head">
+      <h2>Book an appointment</h2>
+      <p>Choose a service and time — we'll confirm your slot by WhatsApp.</p>
+    </div>
+
+    <form class="booking-form" id="bookingForm">
+      <div class="form-group">
+        <label>Service</label>
+        <div class="service-select" id="serviceSelect">
+          <button type="button" data-service="Bridal Hairstyling">Bridal Hairstyling</button>
+          <button type="button" data-service="Wig Making">Wig Making</button>
+          <button type="button" data-service="Makeup Artistry">Makeup Artistry</button>
+          <button type="button" data-service="Cornrow / Braiding">Cornrow / Braiding</button>
+          <button type="button" data-service="Hair Fixing & Washing">Hair Fixing &amp; Washing</button>
+          <button type="button" data-service="Manicure / Pedicure">Manicure / Pedicure</button>
+          <button type="button" data-service="Facial Massaging">Facial Massaging</button>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+          <label>Time</label>
+          <div class="time-slots" id="timeSlots"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" required>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-primary">Request appointment</button>
+      <p class="booking-note" id="bookingNote">We'll confirm your slot by WhatsApp.</p>
+    </form>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="nav-logo">Ahwenepa <span>Gold</span></div>
+      <p>Home service within Accra &amp; training service available.</p>
+      <p>050 927 5286 &nbsp;|&nbsp; 024 334 6677</p>
+    </div>
+  </footer>
+
+</body>
+</html>
